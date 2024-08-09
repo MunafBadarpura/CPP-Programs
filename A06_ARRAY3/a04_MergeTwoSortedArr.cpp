@@ -12,12 +12,13 @@ vector<int> mergesort(vector<int> &v1,vector<int> &v2){
         if(v1[i]<v2[j]){
             v3[k] = v1[i];
             i++;
+            k++;
         }
         else{
             v3[k] = v2[j];
             j++;
+            k++;
         }
-        k++;
     }
     if(i==v1.size()){
         while(j<v2.size()){
@@ -57,7 +58,7 @@ int main(){
     // }
     cout<<endl;
 
-    vector<int> v3= mergesort(v1,v2);
+    vector<int> v3 = mergesort(v1,v2);
 
     for(int i=0;i<v3.size();i++){
         cout<<v3[i]<<" ";

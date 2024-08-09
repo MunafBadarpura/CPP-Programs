@@ -1,24 +1,29 @@
 #include<iostream>
 using namespace std;
 int main(){
-//    VALID
-    //int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}} ;
-    //int arr[][3] = {1,2,3,4,5,6,7,8,9};
-    //int arr[3][3] = {1,2,3,4,5,6,7,8,9};
+    int m;
+    cout<<"Enter Number of Columns/Rows :";
+    cin>>m;
+    cout<<"Enter Matrix :"<<endl;
+    int arr[m][m];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<m;j++){
+            cin>>arr[i][j];
+        }
+    }
+    int brr[m][m];
 
-//    NOT-VALID
-    //int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9},{8,6,4}} ;
-    //int arr[2][] = {1,2,3,4,5,6,7,8,9};
-    //int arr[3][3] = {1,2,3,4,5,6,7,8,9,10,11,12};
+    for(int i=0;i<m;i++){
+        for(int j=0;j<m;j++){
+           brr[j][i] = arr[m-1-i][j];
+        }
+    }
 
-//   INPUT-OUTPUT
-     int arr[3][3]={1,2,3,1,2,3,1,2,3};
-
-     for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cout<<arr[i][j]<<" ";
+    for(int i=0;i<m;i++){
+        for(int j=0;j<m;j++){
+            cout<<brr[i][j]<<" "; 
         }
         cout<<endl;
-     }
-
+    }
+    
 }

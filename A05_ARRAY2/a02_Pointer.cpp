@@ -4,6 +4,7 @@ int main(){
     int arr[] = {1,2,3,4,5};
     int* ptr = arr;    //int* ptr = &arr <-- it is wrong
     cout<<ptr<<endl;
+    cout<<&arr[0]<<endl;
 
     for(int i=0;i<=4;i++){
         cout<<ptr[i]<<" ";

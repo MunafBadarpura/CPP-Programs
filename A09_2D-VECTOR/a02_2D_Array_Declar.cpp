@@ -9,5 +9,6 @@ int main(){
     vector <vector<int> > v2(3,vector<int> (4,2));  //3-Rows , 4-Columns ,all elements are 2
     
     cout<<v.size()<<endl;
-    cout<<v[0].size();
+    cout<<v[0].size()<<endl;
+    cout<<v2[0][0];
 }

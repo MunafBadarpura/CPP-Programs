@@ -10,7 +10,7 @@ int main(){
 
     for(int i = 2;i<=n-1;i++){
         if(n%i==0) {
-            a=1;  //not orime
+            a=1;  //not prime
             break;
         }
         else a=0;

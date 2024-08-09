@@ -15,7 +15,7 @@ int main(){
         cout<<v[i]<<" ";
     }
     cout<<endl;
-    sort(v.begin(),v.end());
+    sort(v.begin(),v.end()); // this helps to sort vector
 
     for(int i=0;i<v.size();i++){
         cout<<v[i]<<" ";

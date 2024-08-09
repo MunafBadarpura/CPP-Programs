@@ -28,7 +28,7 @@ int main(){
 
     if(n==p){ //matrix1 column = matrix2 row
         //Resultant matrix
-        int res[m][q];
+        int res[m][q]; // arr[matrix1 row][matrix1 colmn]
         for(int i=0;i<m;i++){
             for(int j=0;j<q;j++){
                 //Multiplication

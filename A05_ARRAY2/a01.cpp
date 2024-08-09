@@ -7,7 +7,7 @@ void display(int a[],int size){
     cout<<endl;
 }
 void change(int a[],int size){
-    a[0]=100;
+    a[0] = 100;
 }
 int main(){
     int arr[] = {1,2,3,4,5};

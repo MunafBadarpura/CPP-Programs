@@ -1,28 +1,26 @@
 #include<iostream>
+#include<climits>
 using namespace std;
-void greet(int arr[],int x,int n){
-    int count = 0;
-    for(int i=0;i<n;i++){
-        // if(arr[i]>x) cout<<arr[i]<<" ";
-        if(arr[i]>x) count++;
-    }
-    cout<<count;
-    return;
-}
 int main(){
-    int n;
-    cout<<"Enter Size :";
+    int n,m;
+    cout<<"Enter Number of Rows : ";
     cin>>n;
-    int arr[n];
-    cout<<"Enter Array :";
+    cout<<"Enter Number of Columns : ";
+    cin>>m;
+    int arr[n][m];
     for(int i=0;i<n;i++){
-        cin>>arr[i];
+        for(int j=0;j<m;j++){
+            cin>>arr[i][j];
+        }
+    }
+    cout<<endl;
+    
+    for(int j=m-1;j>=0;j--){
+        for(int i=0;i<n;i++){
+            cout<<arr[i][j];
+        }
+        cout<<endl;
     }
 
-     int x;
-    cout<<"Enter X :";
-    cin>>x;
 
-    greet(arr,x,n);
-    
-}
+}    
